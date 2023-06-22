@@ -1,0 +1,80 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    text-align: center;
+    font-family: 'Outfit', 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+  }
+  body {
+    background-color: hsl(212, 45%, 89%);
+    display: grid;
+    place-items: center;
+    line-height: 1.5;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    overflow: auto;
+  }
+  body p{
+    font-size: 15px;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  .viewer{
+    /*setting the background color*/
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(220, 15%, 55%);
+    /*setting the dimensions*/ 
+    min-height: 60%;
+    max-height: auto;
+    max-width: 300px;
+    border-radius: 5%;
+
+    /*setting the content display*/
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .qr-image{
+    border-radius: 5%;
+    max-width: 100%;
+    max-height: 50%;
+  }
+
+  .text{
+    max-height: 25%;
+    line-height: 1.2;
+    letter-spacing: 0.6px;
+    word-spacing: 0.1px;
+    text-align: center;
+    margin: 15px auto;
+    padding: 15px auto;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+.attribution{
+  background-color: hsl(0, 0%, 100%);
+    font-size: 11px; 
+    text-align: center;
+    max-height: 3vh;
+    position: fixed;
+    bottom: 0;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
